@@ -13,13 +13,36 @@
 <body>
 <!--  header-->
    <header class="header">
+<!--      logo-->
        <div class="logo"><a href="#"><img src="img/astro-logo.png" alt="logo astro"></a></div>
+<!--       top menu-->
        <ul class="menu">
            <li><a href="#">Главная</a></li>
            <li><a href="#">Услуги</a></li>
            <li><a href="#">Склад</a></li>
-           <li><a href="#">Мягкая мебель</a></li>
-           <li><a href="#">Корпусная мебель</a></li>
+           <li><a href="#">Мягкая мебель</a>
+               <ul class="submenu">
+                   <li><a href="#">Диваны</a></li>
+                   <li><a href="#">Кресла</a></li>
+                   <li><a href="#">Пуф</a></li>
+                   <li><a href="#">link</a></li>
+                   <li><a href="#">link</a></li>
+                   <li><a href="#">link</a></li>
+               </ul>
+           </li>
+           <li><a href="#">Корпусная мебель</a>
+               <ul class="submenu">
+                   <li><a href="#">Кухни</a></li>
+                   <li><a href="#">Стенки</a></li>
+                   <li><a href="#">Шкафы</a></li>
+                   <li><a href="#">Комоды</a></li>
+                   <li><a href="#">Стойки</a></li>
+                   <li><a href="#">Столы</a></li>
+                   <li><a href="#">Кровати</a></li>
+                   <li><a href="#">Прихожие</a></li>
+                   <li><a href="#">Декоративные элементы</a></li>
+               </ul>
+           </li>
        </ul>
    </header>
 <!-- END  header-->
@@ -215,10 +238,34 @@
         </div>
     </section>
 <!-- END stock-->
+<!--   parallax-->
+    <section class="section-parallax">       
+        <div class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-parallax2.jpg"></div>
+        <h1 class="section-title">Мебель от фабрики <span>«Астро»</span> – то, что вам нужно</h1>
+        <div class="section-parallax__flex">
+            <div class="section-parallax__flex-block">
+                <p class="section-descr">Нужно ли вам много мебели или только кухонный уголок – это все, и даже больше найдете у нас. Наш магазин мебели в Волгограде предлагает вам: кухни, спальни, прихожие, диваны, кресла, детские, шкафы-купе. <br><br> Ищете диван или кресло? Наш подробный каталог мягкой мебели к вашим услугам. Много мебели разных форм и расцветок позволяет осуществить множество идей по оформлению комнаты. <br><br>
+                Если точно знаете, как должен выглядеть предмет обстановки и хотите, чтобы он был сделан так, а не иначе – обращайтесь. Мы воплотим задуманный проект, изготовив его по фотографиям или эскизам. <br><br>Продукция нашей фабрики отвечает самым высоким потребительским запросам. Ее качество обусловлено опытом в данной сфере (мы производим мебель на заказ с 1998 года), а также мастерством наших высококвалифицированных специалистов. Любая, даже самая сложная, филигранная работа будет выполнена безукоризненно. <br><br>Изготовление мебели на заказ – это полное ее соответствие вашему интерьеру и предпочтениям в плане стиля, габаритов, материала, фурнитуры. Различный дизайн, а также цветовые решения открывают простор для оформления комнаты так, как вы это представляете. А мы поможем подобрать вариант, который наиболее гармонично впишется в пространство вашего помещения.</p>
+            </div>
+            <div class="section-parallax__flex-block">
+               <div class="parallax-img"><img src="img/parallax-img.jpeg" alt=""></div>
+
+            </div>
+        </div>
+           
+    </section>
+<!-- END   parallax-->
+  
+  
+  
+  
    
+<!--    jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     
+<!--    Slider jjsor-->
     <script src="./js/jssor.slider-27.1.0.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
+    <!--    Slider jjsor-->
     <script type="text/javascript">
         jssor_1_slider_init = function() {
 
@@ -231,6 +278,7 @@
 
             var jssor_1_options = {
               $AutoPlay: 1,
+              $PauseOnHover: 0,
               $SlideDuration: 800,
               $SlideEasing: $Jease$.$OutQuint,
               $CaptionSliderOptions: {
@@ -274,9 +322,11 @@
             /*#endregion responsive code end*/
         };
     </script>
-    <script type="text/javascript">jssor_1_slider_init();</script>
-    
-    <!-- #endregion Jssor Slider End -->
+    <script type="text/javascript">jssor_1_slider_init();</script>    
+    <!-- Jssor Slider End -->
+    <script src="js/parallax.min.js"></script>
+<!--    commonJs-->
+    <script type="text/javascript" src="js/common.js"></script>
 
     
 </body>

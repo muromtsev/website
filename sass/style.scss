@@ -31,13 +31,48 @@ body {
         padding: 20px;
         margin: 10px;
         
-        li {
-            padding: 10px;
+        li {            
+            position: relative;
+                        
             a {
                 display: block;
                 text-decoration: none;
-                color: $black;
+                color: $orange;
+                padding: 10px 20px;
+                border-radius: 3px;
+                transition: .4s ease;
+                font-weight: 600;
+                
+                
+                
+                &:hover {
+                    background-color: $orange;
+                    color: $white;
+                }
+                
             } //a
+            
+            //submenu
+            .submenu {
+                display: none;
+                position: absolute;
+                z-index: 99;
+                background-color: $white;
+                width: 100%;
+                
+                li {
+                    padding: 5px 0;
+                    
+                    a {
+                        display: block;  
+                        
+                        
+                    }
+                    
+                }
+                
+            }//submenu 
+            
         }// li 
     }//menu
     
@@ -51,6 +86,11 @@ body {
     line-height: 60px;
     margin-top: 80px;
     margin-bottom: 80px;
+    
+    span {
+        color: $orange;
+        font-weight: bold;
+    }
 }
 .section-descr {
     max-width: 1000px;
@@ -132,6 +172,7 @@ body {
     min-height: 800px;
     width: 100%;
     background: url(../img/fur_gray_bg.jpg);
+   
     
     &-item {
         max-width: 350px;
@@ -203,3 +244,85 @@ body {
         }
     }//item
 }//stock
+
+//parallax
+.section-parallax {
+    margin-top: 150px;
+    min-height: 1000px;
+    
+    
+    .section-title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+    }
+    
+    .section-descr {
+        max-width: 600px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        padding: 0 25px;
+    }
+    
+    .parallax-window {  
+        min-height: 350px;
+        background: transparent;
+    }
+        
+    &__flex {
+        display: flex;
+        max-width: 1920px;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &-block {
+            height: auto;
+            padding: 20px;
+
+            .parallax-img {
+                max-width: 600px;
+                position: relative;
+                border: 6px solid $white;
+                border-radius: 3px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+                &::before,
+                &::after {
+                    content: "";
+                    max-width: 600px;
+                    width: 100%;
+                    height: 390px;
+                    position: absolute;
+                    z-index: -1;
+                    border: 6px solid $white;
+                    border-radius: 3px;
+                    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+
+                }
+
+                &::before {
+                    background: $orange;
+                    top: 0px;
+                    left: -10px;
+                    transform: rotate(-5deg);
+                }
+                &::after {
+                    background: $orange;
+                    top: 5px;
+                    left: 0px;
+                    transform: rotate(5deg);
+                }
+
+                img {
+                    max-width: 100%;
+                    display: block;
+
+                } //img
+            }//parallax-img
+        }//block
+    }//flex        
+}//parallax

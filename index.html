@@ -9,17 +9,22 @@
     <link rel="stylesheet" href="./css/style.css">
 <!--    google-fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+
 </head>
-<body>
+<body id="id1">
 <!--  header-->
-   <header class="header">
+   <header class="header" id="header">
 <!--      logo-->
-       <div class="logo"><a href="#"><img src="img/astro-logo.png" alt="logo astro"></a></div>
+       <div class="logo"><a href="index.html"><img src="img/astro-logo.png" alt="logo astro"></a></div>
 <!--       top menu-->
        <ul class="menu">
-           <li><a href="#">Главная</a></li>
-           <li><a href="#">Услуги</a></li>
-           <li><a href="#">Склад</a></li>
+           <li><a href="#id1">Главная</a></li>
+           <li><a href="#id2">Услуги</a></li>
+           <li><a href="#id3">Склад</a></li>
            <li><a href="#">Мягкая мебель</a>
                <ul class="submenu">
                    <li><a href="#">Диваны</a></li>
@@ -122,7 +127,7 @@
     </div>
 <!-- END   jssor slider-->
 <!--services-->
-   <section class="section">
+   <section class="section" id="id2">
        <h1 class="section-title">Мебель на заказ в Волгограде от производителя</h1>
        <p class="section-descr">Вы задумали сменить обстановку в квартире или хотите только обновить гостиную? <br> Мы поможем осуществить эти планы. Превосходная мебель от производителя на заказ удовлетворит <br> как обычные, так и специальные требования. Обратившись к нам, вы выгодно приобретете необходимые предметы обстановки.</p>
        <div class="services">
@@ -160,7 +165,7 @@
    </section>
    <!-- END services-->
 <!--stock-->
-    <section class="section">
+    <section class="section"   id="id3">
         <h1 class="section-title">Новое на складе</h1>
         <div class="stock">
             <div class="stock-item item-1">
@@ -248,8 +253,28 @@
                 Если точно знаете, как должен выглядеть предмет обстановки и хотите, чтобы он был сделан так, а не иначе – обращайтесь. Мы воплотим задуманный проект, изготовив его по фотографиям или эскизам. <br><br>Продукция нашей фабрики отвечает самым высоким потребительским запросам. Ее качество обусловлено опытом в данной сфере (мы производим мебель на заказ с 1998 года), а также мастерством наших высококвалифицированных специалистов. Любая, даже самая сложная, филигранная работа будет выполнена безукоризненно. <br><br>Изготовление мебели на заказ – это полное ее соответствие вашему интерьеру и предпочтениям в плане стиля, габаритов, материала, фурнитуры. Различный дизайн, а также цветовые решения открывают простор для оформления комнаты так, как вы это представляете. А мы поможем подобрать вариант, который наиболее гармонично впишется в пространство вашего помещения.</p>
             </div>
             <div class="section-parallax__flex-block">
-               <div class="parallax-img"><img src="img/parallax-img.jpeg" alt=""></div>
-
+                <div class="jssor_2" id="jssor_2">
+                    <div class="jssor_2__slides" data-u="slides">
+                        <div><img data-u="image" src="img/parallax-img.jpeg" /></div>
+                        <div><img data-u="image" src="img/a1.jpg" /></div>
+                        <div><img data-u="image" src="img/a2.jpeg" /></div>
+                        <div><img data-u="image" src="img/a3.jpeg" /></div>
+                        <div><img data-u="image" src="img/a4.jpeg" /></div>
+                        <div><img data-u="image" src="img/a5.jpeg" /></div>
+                        <div><img data-u="image" src="img/a6.jpeg" /></div>
+    <!--                    <div><img data-u="image" src="image2.jpg" /></div>-->
+                    </div>
+                    <!-- Bullet Navigator -->
+<!--
+                    <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+-->
+                </div>
             </div>
         </div>
            
@@ -261,7 +286,7 @@
   
    
 <!--    jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
 <!--    Slider jjsor-->
     <script src="./js/jssor.slider-27.1.0.min.js"></script>
@@ -324,6 +349,66 @@
     </script>
     <script type="text/javascript">jssor_1_slider_init();</script>    
     <!-- Jssor Slider End -->
+<!--
+    <script type="text/javascript">
+        jssor_2_slider_init = function() {
+            
+            
+            var jssor2_slider = new $JssorSlider$("jssor_2", options);
+            
+            var _SlideshowTransitions = [
+            {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2,$Outside:true},
+            {$Duration:600,$Delay:20,$Cols:8,$Rows:4,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2050,$Opacity:2}
+        ];
+            
+            var options = { 
+            $AutoPlay: 1, 
+//            $BulletNavigatorOptions: {
+//                $Class: $JssorBulletNavigator$,
+//                $ChanceToShow: 2
+//            },
+            $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: _SlideshowTransitions,
+                $TransitionsOrder: 1,
+                $ShowLink: true
+            }
+            
+        };
+            
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 550;
+
+            function ScaleSlider() {
+                var containerElement = jssor2_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor2_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+            
+            
+        }
+        
+    </script>
+    <script type="text/javascript">jssor_2_slider_init();</script>
+-->
     <script src="js/parallax.min.js"></script>
 <!--    commonJs-->
     <script type="text/javascript" src="js/common.js"></script>

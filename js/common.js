@@ -1,26 +1,30 @@
 jQuery(document).ready(function() {
+    //header
+
+//    var HeaderTop = $('#header').offset().top;
+//        $(window).scroll(function(){
+//                if( $(window).scrollTop() > HeaderTop ) {
+//                        $('#header').css({position: 'fixed', top: '0px'});
+//                        $('#header').addClass('header-active');
+//                } else {
+//                        $('#header').css({position: 'static'});
+//                        $('#header').removeClass('header-active');
+//                }
+//        });
+//
+//    //
+    
+    
     //scroll
     
     $("body").on('click', '[href*="#"]', function(e){
-        var fixed_offset = 120;
-        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - 160 }, 1200);
+        var fixed_offset = 70;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1200);
         e.preventDefault();
     });
     
     //
     
-    //header
-
-    var HeaderTop = $('#header').offset().top;
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > HeaderTop ) {
-                        $('#header').css({position: 'fixed', top: '0px'});
-                } else {
-                        $('#header').css({position: 'static'});
-                }
-        });
-
-    //
     
     //parallax
 

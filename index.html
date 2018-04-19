@@ -7,6 +7,7 @@
 
 <!--    style-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bg-btn.css">
 <!--    google-fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700" rel="stylesheet">
     
@@ -17,7 +18,7 @@
 </head>
 <body id="id1">
 <!--  header-->
-   <header class="header" id="header">
+   <header class="" id="header">
 <!--      logo-->
        <div class="logo"><a href="index.html"><img src="img/astro-logo.png" alt="logo astro"></a></div>
 <!--       top menu-->
@@ -81,7 +82,7 @@
         .jssora051.jssora051dn {opacity:.5;}
         .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
     </style>
-     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:550px;overflow:hidden;visibility:hidden;">
+     <div class="jssor_1" id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:550px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
@@ -127,7 +128,7 @@
     </div>
 <!-- END   jssor slider-->
 <!--services-->
-   <section class="section" id="id2">
+   <section class="section-2" id="id2">
        <h1 class="section-title">Мебель на заказ в Волгограде от производителя</h1>
        <p class="section-descr">Вы задумали сменить обстановку в квартире или хотите только обновить гостиную? <br> Мы поможем осуществить эти планы. Превосходная мебель от производителя на заказ удовлетворит <br> как обычные, так и специальные требования. Обратившись к нам, вы выгодно приобретете необходимые предметы обстановки.</p>
        <div class="services">
@@ -165,7 +166,7 @@
    </section>
    <!-- END services-->
 <!--stock-->
-    <section class="section"   id="id3">
+    <section class="section-3"   id="id3">
         <h1 class="section-title">Новое на складе</h1>
         <div class="stock">
             <div class="stock-item item-1">
@@ -276,10 +277,18 @@
 -->
                 </div>
             </div>
+<!--            flex-block-->
         </div>
-           
+<!--           section-parallax__flex-->
     </section>
 <!-- END   parallax-->
+ 
+ 
+ 
+ 
+<!-- btn_top_jQuery-->
+ <div class="btn_top_jQuery" id="btn_top_jQ"></div>
+ <!-- btn_top_jQuery-->
   
   
   
@@ -412,7 +421,24 @@
     <script src="js/parallax.min.js"></script>
 <!--    commonJs-->
     <script type="text/javascript" src="js/common.js"></script>
-
+<!--btn_top_jQuery-->
+    <script type="text/javascript">
+        var top_show = 550; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+        var delay = 800; // Задержка прокрутки
+        $(document).ready(function() {
+            $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+              /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+              if ($(this).scrollTop() > top_show) $('#btn_top_jQ').fadeIn();
+              else $('#btn_top_jQ').fadeOut();
+            });
+            $('#btn_top_jQ').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+              /* Плавная прокрутка наверх */
+              $('body, html').animate({
+                scrollTop: 0
+              }, delay);
+            });
+        });
+</script>
     
 </body>
 </html>

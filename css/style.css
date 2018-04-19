@@ -38,9 +38,7 @@ table {
 body {
   height: 5000px; }
 
-.header {
-  position: fixed;
-  top: 0;
+header {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -49,9 +47,10 @@ body {
   width: 100%;
   min-height: 120px;
   background-color: rgba(238, 238, 238, 0.9);
-  box-shadow: 0 1px 5px #000;
-  z-index: 99; }
-  .header .menu {
+  box-shadow: 0 1px 1px #000;
+  z-index: 99;
+  transition: all .5s linear; }
+  header .menu {
     display: flex;
     font-family: Open Sans, sans-serif;
     flex-wrap: wrap;
@@ -60,34 +59,33 @@ body {
     width: 100%;
     padding: 20px;
     margin: 10px; }
-    .header .menu li {
+    header .menu li {
       position: relative; }
-      .header .menu li a {
+      header .menu li a {
         display: block;
+        text-align: center;
         text-decoration: none;
         color: #ea5e21;
         padding: 10px 20px;
         border-radius: 3px;
         transition: .4s ease;
         font-weight: 600; }
-        .header .menu li a:hover {
+        header .menu li a:hover {
           background-color: #ea5e21;
           color: #fff; }
-      .header .menu li .submenu {
+      header .menu li .submenu {
         display: none;
         position: absolute;
         z-index: 99;
         width: 100%;
         background-color: rgba(238, 238, 238, 0.9);
         border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px; }
-        .header .menu li .submenu li {
+        border-bottom-right-radius: 3px;
+        padding-top: 40px; }
+        header .menu li .submenu li {
           padding: 5px 0; }
-          .header .menu li .submenu li a {
+          header .menu li .submenu li a {
             display: block; }
-
-.header-active {
-  background-color: rgba(255, 255, 255, 0.61); }
 
 .section-title {
   font-family: Open Sans, sans-serif;
@@ -161,10 +159,11 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 1600px;
-  min-height: 800px;
+  max-width: 1920px;
   width: 100%;
-  background: url(../img/fur_gray_bg.jpg); }
+  padding: 40px 0;
+  width: 100%;
+  background: url(../img/bgbg5.png); }
   .stock-item {
     max-width: 350px;
     width: 100%;
@@ -287,6 +286,17 @@ body {
           width: 550px;
           height: 350px;
           overflow: hidden; }
+
+.btn_top_jQuery {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  display: block;
+  background: url(/img/top.png);
+  z-index: 99999; }
 
 @media screen and (max-width: 610px) {
   .jssor_2 {

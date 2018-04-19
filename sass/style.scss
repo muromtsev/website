@@ -5,9 +5,7 @@ body {
     height: 5000px; /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 //header
-.header {
-    position: fixed;
-    top: 0;
+header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -16,8 +14,9 @@ body {
     width: 100%;
     min-height: 120px;
     background-color: rgba(238, 238, 238, 0.9);
-    box-shadow: 0 1px 5px $black;
+    box-shadow: 0 1px 1px $black;
     z-index: 99;
+    transition: all .5s linear;
     
     
     .logo {
@@ -34,11 +33,12 @@ body {
         padding: 20px;
         margin: 10px;
         
-        li {            
+        li {   
             position: relative;
-                        
+            
             a {
                 display: block;
+                text-align: center;
                 text-decoration: none;
                 color: $orange;
                 padding: 10px 20px;
@@ -65,6 +65,7 @@ body {
                 background-color: rgba(238, 238, 238, 0.9);
                 border-bottom-left-radius: 3px;
                 border-bottom-right-radius: 3px;
+                padding-top: 40px;
                 
                 
                 li {
@@ -82,12 +83,11 @@ body {
             
         }// li 
     }//menu
-    
 }//header
 
-.header-active {
-    background-color: rgba(255, 255, 255, 0.61);
-}
+
+
+
 
 // services
 .section-title {
@@ -179,10 +179,11 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 1600px;
-    min-height: 800px;
+    max-width: 1920px;
     width: 100%;
-    background: url(../img/fur_gray_bg.jpg);
+    padding: 40px 0;
+    width: 100%;
+    background: url(../img/bgbg5.png);
    
     
     &-item {
@@ -358,7 +359,21 @@ body {
 }//parallax
 
 
+//btn_top_jQuery
 
+.btn_top_jQuery {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    display: block;
+    background: url(/img/top.png);
+    z-index: 99999;
+}
+
+//btn_top_jQuery
 
 
 

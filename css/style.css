@@ -94,9 +94,12 @@ header {
   line-height: 60px;
   margin-top: 80px;
   margin-bottom: 80px; }
-  .section-title span {
-    color: #ea5e21;
-    font-weight: bold; }
+  .section-title img {
+    max-width: 200px;
+    vertical-align: middle;
+    box-shadow: 0 5px 5px #777;
+    padding: 10px;
+    border-radius: 2px; }
 
 .section-descr {
   max-width: 1000px;
@@ -294,8 +297,7 @@ header {
   width: 64px;
   height: 64px;
   cursor: pointer;
-  display: block;
-  background: url(/img/top.png);
+  display: none;
   z-index: 99999; }
 
 @media screen and (max-width: 610px) {

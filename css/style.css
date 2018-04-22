@@ -290,6 +290,51 @@ header {
           height: 350px;
           overflow: hidden; }
 
+.furniture {
+  box-sizing: border-box;
+  max-width: 1600px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #eee;
+  font-family: Open Sans, sans-serif; }
+  .furniture-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ea5e21;
+    padding-top: 20px;
+    padding-left: 50px;
+    text-align: center; }
+    .furniture-title__name {
+      color: #ea5e21;
+      font-size: 25px;
+      padding: 20px 0; }
+  .furniture .furniture-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .furniture .furniture-items-sofa {
+      text-align: center;
+      max-width: 300px;
+      margin: 5px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 5px 0 #777; }
+      .furniture .furniture-items-sofa a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        line-height: 40px; }
+        .furniture .furniture-items-sofa a:hover {
+          color: #ea5e21; }
+      .furniture .furniture-items-sofa img {
+        max-width: 300px;
+        border-radius: 2px; }
+    .furniture .furniture-items__price {
+      font-size: 18px;
+      color: #ea5e21;
+      line-height: 35px; }
+
 .btn_top_jQuery {
   position: fixed;
   right: 20px;

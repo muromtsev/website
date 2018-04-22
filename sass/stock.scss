@@ -70,6 +70,7 @@ body {
             transition: .3s linear;
             box-shadow: 0 8px 6px -6px $black;
             text-transform: uppercase;
+            cursor: pointer;
                         
             &:hover {
                 color: $orange;

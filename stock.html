@@ -5,54 +5,116 @@
     <title>WebSite v.1.0.0</title>
     <link rel="stylesheet" href="css/stock.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modal.css">
     
 </head>
 <body>
-   
-    <ul class="grid cs-style-5">
-        <li>
-            <figure>
-                <img src="http://astromebel.ru/images/stock/item2345.jpg" alt="img04">
-                <figcaption>
-                    <h3>Диван "Аккорд"</h3>
-                    <span>от 17550 <i class="fas fa-ruble-sign"></i> </span>
-                    <a href="#">Посмотреть</a>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img src="http://astromebel.ru/images/catalog/medium/item114.jpg" alt="img04">
-                <figcaption>
-                    <h3>Диван "Ампир"</h3>
-                    <span>от 19150 <i class="fas fa-ruble-sign"></i> </span>
-                    <a href="#">Посмотреть</a>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img src="http://astromebel.ru/images/catalog/medium/item117.jpg" alt="img04">
-                <figcaption>
-                    <h3>Диван "Ева"</h3>
-                    <span>от 23000 <i class="fas fa-ruble-sign"></i> </span>
-                    <a href="#">Посмотреть</a>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img src="http://astromebel.ru/images/catalog/medium/item122.jpg" alt="img04">
-                <figcaption>
-                    <h3>Диван "Людмила"</h3>
-                    <span>от 19750 <i class="fas fa-ruble-sign"></i> </span>
-                    <a href="#">Посмотреть</a>
-                </figcaption>
-            </figure>
-        </li>
-    </ul>
-   
-   
-    
+    <div class="stock-list">
+        <ul class="grid cs-style-5">
+            <li>
+                <figure>
+                    <img src="http://astromebel.ru/images/stock/item2345.jpg" alt="img04">
+                    <figcaption>
+                        <h3>Диван "Аккорд"</h3>
+                        <span>от 17550 <i class="fas fa-ruble-sign"></i> </span>
+                        <a class="btn js-click-modal">Посмотреть</a>
+                    </figcaption>
+                </figure>
+            </li>      
+            <li>
+                <figure>
+                    <img src="http://astromebel.ru/images/catalog/medium/item114.jpg" alt="img04">
+                    <figcaption>
+                        <h3>Диван "Ампир"</h3>
+                        <span>от 19150 <i class="fas fa-ruble-sign"></i> </span>
+                        <a href="#">Посмотреть</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="http://astromebel.ru/images/catalog/medium/item117.jpg" alt="img04">
+                    <figcaption>
+                        <h3>Диван "Ева"</h3>
+                        <span>от 23000 <i class="fas fa-ruble-sign"></i> </span>
+                        <a href="#">Посмотреть</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="http://astromebel.ru/images/catalog/medium/item122.jpg" alt="img04">
+                    <figcaption>
+                        <h3>Диван "Людмила"</h3>
+                        <span>от 19750 <i class="fas fa-ruble-sign"></i> </span>
+                        <a href="#">Посмотреть</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+
+<!------------------- modal   ------------------------------->      
+        <div class="modal">
+            <a class="btn js-close-modal">Close</a>
+            <div class="modal-flex">
+                <div class="modal-flex__left">
+                    <h1>Диван "Аккорд"</h1>
+                    <div class="slider">
+                        <img src="http://astromebel.ru/images/stock/item2441.jpg" alt="">
+                        <div class="mini-slider">
+                            <img src="http://astromebel.ru/images/stock/item2345.jpg" alt="">
+                            <img src="http://astromebel.ru/images/stock/item2405.jpg" alt="">
+                            <img src="http://astromebel.ru/images/stock/item2441.jpg" alt="">
+                        </div>
+                    </div>
+                    <script type="text/javascript">(function() {
+                      if (window.pluso)if (typeof window.pluso.start == "function") return;
+                      if (window.ifpluso==undefined) { window.ifpluso = 1;
+                        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                        s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                        s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                        var h=d[g]('body')[0];
+                        h.appendChild(s);
+                      }})();</script>
+                    <div class="pluso" data-background="transparent" data-options="medium,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+                    
+                    
+                </div>
+                <div class="modal-flex__right">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/astro-logo.png" alt="logo astro"></a>
+                    </div>
+                     <div class="block">
+                         <p class="price">Цена от  <span>17550 <i class="fas fa-ruble-sign"></i></span></p>
+                         <h2>Преимущества</h2>
+                         <p class="title">Данная модель относится к "Чехловой" мягкой мебели. Возможны исполнения шириной 80 см, 120 см, 140 см и 190 см. Хорошо подходит для интерьеров детских комнат и гостинных.</p>
+                         <div class="stars">
+                            <a><i class="fas fa-star"></i></a>    
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="fas fa-star"></i></a>
+                            <a><i class="far fa-star"></i></a>
+                            <div class="reviews"><a href="#">Читать отзывы клиентов</a></div>                            
+                         </div>
+                     </div>
+                     
+                        
+            </div>
+            <!--right-->
+            
+        </div>
+        </div>
+          
+<!-------------------END modal   ------------------------------->  
+    </div>  
+<!--    stock-list-->
+  
+  
+  
+   <!--    jQuery-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/jssor.slider.min.js"></script>
+    <script src="js/jssor-stock-slider.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

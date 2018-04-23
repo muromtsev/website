@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>WebSite v.1.0.0</title>
-    <link rel="stylesheet" href="css/stock.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    style-->
+    <link rel="stylesheet" href="./css/stock.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/modal.css">    
+    <!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+
     
 </head>
 <body>
+   <!--  header-->
+   <header class="header" id="header">
+<!--      logo-->
+       <div class="logo"><a href="index.html"><img src="img/astro-logo.png" alt="logo astro"></a></div>
+<!--       top menu-->
+       <ul class="menu">
+           <li><a href="index.html">Главная</a></li>
+           <li><a href="index.html#id2">Услуги</a></li>
+           <li><a href="stock.html">Склад</a></li>
+           <li><a href="#">Мягкая мебель</a>
+               <ul class="submenu">
+                   <li><a href="stock.html">Диваны</a></li>
+                   <li><a href="#">Кресла</a></li>
+                   <li><a href="#">Пуф</a></li>
+               </ul>
+           </li>
+           <li><a href="#">Корпусная мебель</a>
+               <ul class="submenu">
+                   <li><a href="#">Кухни</a></li>
+                   <li><a href="#">Стенки</a></li>
+                   <li><a href="#">Шкафы</a></li>
+                   <li><a href="#">Комоды</a></li>
+                   <li><a href="#">Стойки</a></li>
+                   <li><a href="#">Столы</a></li>
+                   <li><a href="#">Кровати</a></li>
+                   <li><a href="#">Прихожие</a></li>
+                   <li><a href="#">Декоративные элементы</a></li>
+               </ul>
+           </li>
+       </ul>
+   </header>
+<!-- END  header-->
     <div class="stock-list">
         <ul class="grid cs-style-5">
             <li>
@@ -55,7 +93,7 @@
 
 <!------------------- modal   ------------------------------->      
         <div class="modal">
-            <a class="btn js-close-modal">Close</a>
+            <div class="btn js-close-modal"><i class="fas fa-times-circle"></i></div>
             <div class="modal-flex">
                 <div class="modal-flex__left">
                     <h1>Диван "Аккорд"</h1>
@@ -97,9 +135,37 @@
                             <div class="reviews"><a href="#">Читать отзывы клиентов</a></div>                            
                          </div>
                      </div>
-                     
-                        
-            </div>
+            <!-- .tabs-->  
+                    <div class="tabs">
+                          <ul class="tabs__caption">
+                            <li class="active">Особенности модели</li>
+                            <li>Бельевой ящик в диване</li>
+                            <li>Размеры</li>
+                          </ul>
+
+                          <div class="tabs__content active">
+                            <ul>
+                              <li>изготовлен на основе пружинных блоков</li>
+                              <li>ровное спальное место</li>
+                              <li>при трансформации не требует расстояние от спинки до стены</li>
+                              <li>подушки, наполнитель Холофайбер</li>
+                            </ul>
+                          </div>
+
+                          <div class="tabs__content">
+                             <ul>
+                               <li>бельевой ящик есть</li>
+                               <li>изготовлен из ламинированного ДСП</li>
+                               <li>вместимость: постельное бельë, подушки 2шт., одеяло 2-х спальное 1шт</li>
+                            </ul>
+                          </div>
+                          <div class="tabs__content">
+                             <img src="http://astromebel.ru/upload/wysiwyg/62e4ea718e6a2985afec97aa68bc3453.jpg" alt="">
+                          </div>
+
+                        </div>
+                        <!-- .tabs-->                       
+                </div>
             <!--right-->
             
         </div>

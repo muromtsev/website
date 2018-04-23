@@ -1,6 +1,22 @@
 @import '_variables';
 @import '_reset.scss';
 
+.js-close-modal {
+    display: block;
+    position: absolute;
+    width: 30px;
+    top: 0;
+    right: 20px;    
+    padding: 10px;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: $orange;
+    font-family: $font-OpenSans;
+}
+
 .modal {
     background: #eee;
     width: 100%;
@@ -91,6 +107,7 @@
                 h2 {
                     padding: 10px;
                     color: $orange;
+                    font-size: 20px;
                 }
                 .title {
                     padding: 10px;
@@ -126,6 +143,115 @@
                     }
                 }//stars
             }//block     
+            //tabs
+            
+            .tabs {	
+                max-width: 700px;
+                width: 100%;
+                margin: 50px 0 30px;
+                
+                .tabs__caption {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    position: relative;
+                    margin: -1px 0 0 -1px;
+                    li {
+                        padding: 9px 15px;
+                        margin: 1px 0 0 1px;
+                        background: $orange;
+                        color: $white;
+                        position: relative;
+                        border: solid $orange;
+                        border-width: 2px 2px 0;
+                        border-radius: 5px 5px 0 0;
+                        text-align: center;
+                        
+                        &:last-child:before {
+                            content: '';
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            right: -2px;
+                            z-index: -1;
+                            height: 5px;
+                            background: #7DCA86;
+                        }
+                        &:not(.active) {
+                            cursor: pointer;
+                        }
+                        &:not(.active):hover {
+                            color: $black;
+                        }
+                    }//li
+                    
+                    &:after {
+                        content: '';
+                        display: table;
+                        clear: both;
+                    }
+                    .active {
+                        background: #FFF;
+                        color: #000;
+                        border-color: $orange;
+                        
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            right: 0;
+                            height: 5px;
+                            background: #FFF;
+                        }
+                    }//active
+                } //tabs-caption 
+                 
+                .tabs__content {
+                    display: none;
+                    background: #FFF;
+                    border: 2px solid $orange;
+                    border-radius: 0 5px 5px 5px;
+                    padding: 7px 15px;
+                    ul {
+                        padding: 20px;
+                        list-style-type: square;
+                        list-style-position: inside;
+                        li {
+                            line-height: 25px;
+                        }
+                        
+                    }
+                    img {
+                        max-width: 400px;
+                        width: 100%;
+                    }
+                    
+                }
+                .active {
+                        display: block;
+                    }
+            }//tabs
+            
+
+
+            @media screen and (max-width: 650px) {
+
+                .tabs__caption  {
+                    li {
+                    -webkit-flex: 1 0 auto;
+                        -ms-flex: 1 0 auto;
+                            flex: 1 0 auto;
+                        }
+                }
+
+
+            }
+            
+            //tabs
+            
+            
+
             
                 
             

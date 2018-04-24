@@ -17,8 +17,18 @@
 
 </head>
 <body id="id1">
+<!--preLoader-->
+    <div class="preloader" id="preloader">
+       <div class="preloader-logo">
+           <img src="img/logo-1.png" alt="" class="preloader-logo__img-1">
+           <img src="img/logo-2.png" alt="" class="preloader-logo__img-2">
+           <img src="img/logo-3.png" alt="" class="preloader-logo__img-3">
+       </div>
+   </div>
+<!--preLoader-->
+
 <!--  header-->
-   <header class="" id="header">
+   <header class="header" id="header">
 <!--      logo-->
        <div class="logo"><a href="index.html"><img src="img/astro-logo.png" alt="logo astro"></a></div>
 <!--       top menu-->
@@ -49,7 +59,8 @@
        </ul>
    </header>
 <!-- END  header-->
-<!--    jssor slider-->
+
+
     <style>
         /*jssor slider loading skin spin css*/
         .jssorl-009-spin img {
@@ -64,66 +75,114 @@
             to { transform: rotate(360deg); }
         }
 
-        /*jssor slider bullet skin 032 css*/
-        .jssorb032 {position:absolute;}
-        .jssorb032 .i {position:absolute;cursor:pointer;}
-        .jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
-        .jssorb032 .i:hover .b {fill:#ea5e21;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
-        .jssorb032 .iav .b {fill:#ea5e21;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
-        .jssorb032 .i.idn {opacity:.3;}
+        /*jssor slider arrow skin 106 css*/
+        .jssora106 {display:block;position:absolute;cursor:pointer;}
+        .jssora106 .c {fill:#fff;opacity:.3;}
+        .jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+        .jssora106:hover .c {opacity:.5;}
+        .jssora106:hover .a {opacity:.8;}
+        .jssora106.jssora106dn .c {opacity:.2;}
+        .jssora106.jssora106dn .a {opacity:1;}
+        .jssora106.jssora106ds {opacity:.3;pointer-events:none;}
 
-        /*jssor slider arrow skin 051 css*/
-        .jssora051 {display:block;position:absolute;cursor:pointer;}
-        .jssora051 .a {fill:none;stroke:#ea5e21;stroke-width:360;stroke-miterlimit:10;}
-        .jssora051:hover {opacity:.8;}
-        .jssora051.jssora051dn {opacity:.5;}
-        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+        /*jssor slider thumbnail skin 101 css*/
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
     </style>
-     <div class="jssor_1" id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:550px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1200px;height:700px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:550px;overflow:hidden;">
-            <div data-p="225.00">
-                <img data-u="image" src="img/5.jpg" />
-                
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1200px;height:700px;overflow:hidden;">
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide1-1200.jpg" />
+                <img data-u="thumb" src="img/slide150.jpg" />
             </div>
-            <div data-p="225.00">
-                <img data-u="image" src="img/2.jpg" />
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide2-1200.jpg" />
+                <img data-u="thumb" src="img/slide2150.jpg" />
             </div>
-            <div data-p="225.00">
-                <img data-u="image" src="img/3.jpg" />
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide3-1200.jpg" />
+                <img data-u="thumb" src="img/slide3-150.jpg" />
             </div>
-            <div data-p="225.00">
-                <img data-u="image" src="img/4.jpg" />
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide4-1200.jpg" />
+                <img data-u="thumb" src="img/slide4-150.jpg" />
             </div>
-            <div data-p="225.00">
-                <img data-u="image" src="img/1.jpg" />
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide5-1200.jpg" />
+                <img data-u="thumb" src="img/slide5-150.jpg" />
             </div>
-            
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide6-120.jpg" />
+                <img data-u="thumb" src="img/slide6-150.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide7-1200.jpg" />
+                <img data-u="thumb" src="img/slide7-150.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide8-1200.jpg" />
+                <img data-u="thumb" src="img/slide8-150.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide9-1200.jpg" />
+                <img data-u="thumb" src="img/slide9-150.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide10-1200.jpg" />
+                <img data-u="thumb" src="img/slide10-150.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/slide11-1200.jpg" />
+                <img data-u="thumb" src="img/slide11-150.jpg" />
+            </div>
+
         </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                </svg>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:1200px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+            <div data-u="slides">
+                <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                    <div data-u="thumbnailtemplate" class="t"></div>
+                    <svg viewbox="0 0 16000 16000" class="cv">
+                        <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                    </svg>
+                </div>
             </div>
         </div>
         <!-- Arrow Navigator -->
-        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:250px;left:30px;" data-scale="0.75">
             <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
             </svg>
         </div>
-        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+        <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:250px;right:30px;" data-scale="0.75">
             <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
             </svg>
         </div>
     </div>
-<!-- END   jssor slider-->
+    
+    <!-- #endregion Jssor Slider End -->
+
 <!--services-->
    <section class="section-2" id="id2">
        <h1 class="section-title">Мебель на заказ в Волгограде от производителя</h1>
@@ -244,7 +303,7 @@
 <!--   parallax-->
     <section class="section-parallax">       
         <div class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-parallax2.jpg"></div>
-        <h1 class="section-title">Мебель от фабрики <img src="img/astro-logo.png" alt="Логотип"> – то, что вам нужно</h1>
+        <h1 class="section-title">Мебель от фабрики <img src="img/astro-logo-png.png" alt="Логотип"> – то, что вам нужно</h1>
         <div class="section-parallax__flex">
             <div class="section-parallax__flex-block">
                 <p class="section-descr">Нужно ли вам много мебели или только кухонный уголок – это все, и даже больше найдете у нас. Наш магазин мебели в Волгограде предлагает вам: кухни, спальни, прихожие, диваны, кресла, детские, шкафы-купе. <br><br> Ищете диван или кресло? Наш подробный каталог мягкой мебели к вашим услугам. Много мебели разных форм и расцветок позволяет осуществить множество идей по оформлению комнаты. <br><br>
@@ -253,13 +312,13 @@
             <div class="section-parallax__flex-block">
                 <div class="jssor_2" id="jssor_2">
                     <div class="jssor_2__slides" data-u="slides">
-                        <div><img data-u="image" src="img/parallax-img.jpeg" /></div>
-                        <div><img data-u="image" src="img/a1.jpg" /></div>
-                        <div><img data-u="image" src="img/a2.jpeg" /></div>
-                        <div><img data-u="image" src="img/a3.jpeg" /></div>
-                        <div><img data-u="image" src="img/a4.jpeg" /></div>
-                        <div><img data-u="image" src="img/a5.jpeg" /></div>
-                        <div><img data-u="image" src="img/a6.jpeg" /></div>
+                        <div><img data-u="image" src="img/slide-2-1.jpg" /></div>
+                        <div><img data-u="image" src="img/slide-2-2.jpg" /></div>
+                        <div><img data-u="image" src="img/slide-2-3.jpg" /></div>
+                        <div><img data-u="image" src="img/slide-2-4.jpg" /></div>
+                        <div><img data-u="image" src="img/slide-2-5.jpg" /></div>
+                        <div><img data-u="image" src="img/slide-2-6.jpg" /></div>
+                        <div><img data-u="image" src="img/slide-2-7.jpg" /></div>
                     </div>                    
                 </div>
             </div>
@@ -268,6 +327,58 @@
 <!--           section-parallax__flex-->
     </section>
 <!-- END   parallax-->
+
+<!--  M B -->
+    <section class="mb">
+        <h1 class="section-title">Мягкая мебель</h1>
+        <!--mb-flex-->
+        <div class="mb-flex">
+           <!--mb-flex__item-->
+            <div class="mb-flex__item">
+                <figure class="effect-lily">
+                    <img src="img/asd.jpg" alt=""/>
+                    <figcaption>
+                        <div>
+                            <h2>Диваны</h2>
+                            <p>Посмотреть</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>	
+                </figure> 
+            </div>
+            <!--mb-flex__item-->
+            <div class="mb-flex__item">
+                <figure class="effect-lily">
+                    <img src="img/asd1.jpg" alt=""/>
+                    <figcaption>
+                        <div>
+                            <h2>Кресла</h2>
+                            <p>Посмотреть</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>	
+                </figure> 
+            </div>
+            <!--mb-flex__item-->
+            <div class="mb-flex__item">
+                <figure class="effect-lily">
+                    <img src="img/asd2.jpg" alt=""/>
+                    <figcaption>
+                        <div>
+                            <h2>Пуфы</h2>
+                            <p>Посмотреть</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>	
+                </figure> 
+            </div>
+            <!--mb-flex__item-->
+            
+        </div>
+    </section>
+<!--  M B -->
+  
+
    
     
  
@@ -287,31 +398,51 @@
     
 <!--    Slider jjsor-->
     <script src="./js/jssor.slider-27.1.0.min.js"></script>
-    <!--    Slider jjsor-->
+<!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
     <script type="text/javascript">
         jssor_1_slider_init = function() {
 
-            var jssor_1_SlideoTransitions = [
-              [{b:-1,d:1,o:-0.7}],
-              [{b:900,d:2000,x:-379,e:{x:7}}],
-              [{b:900,d:2000,x:-379,e:{x:7}}],
-              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
             ];
 
             var jssor_1_options = {
               $AutoPlay: 1,
-              $PauseOnHover: 0,
-              $SlideDuration: 800,
-              $SlideEasing: $Jease$.$OutQuint,
-              $CaptionSliderOptions: {
-                $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_1_SlideoTransitions
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
               },
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $SpacingX: 5,
+                $SpacingY: 5
               }
             };
 
@@ -319,7 +450,7 @@
 
             /*#region responsive code begin*/
 
-            var MAX_WIDTH = 3000;
+            var MAX_WIDTH = 1200;
 
             function ScaleSlider() {
                 var containerElement = jssor_1_slider.$Elmt.parentNode;
@@ -344,8 +475,7 @@
             /*#endregion responsive code end*/
         };
     </script>
-    <script type="text/javascript">jssor_1_slider_init();</script>    
-    <!-- Jssor Slider End -->
+    <script type="text/javascript">jssor_1_slider_init();</script>
 
     <script src="js/parallax.min.js"></script>
 <!--    commonJs-->

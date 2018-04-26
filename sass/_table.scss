@@ -1,0 +1,53 @@
+.furniture-stiduo {
+    font-family: $font-Lora;
+    background-color: #eee;
+    padding-bottom: 80px;
+    
+    .table-services, tr, th {
+        border: 1px solid black;
+    }
+    .table-services {
+        border-collapse: collapse;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: $white;
+    
+        caption {
+            font-size: 25px;
+            font-style: italic;
+            margin-bottom: 40px;
+            margin-top: 30px;
+
+        }
+        
+        
+
+        tr, th {
+            padding: 10px;
+            font-size: 16px;
+        }
+        tr {
+            th:first-child {
+                width: 70%;
+            }
+            
+        }
+        tr:not(:first-child) {
+            th:first-child {                
+                text-align: left;                
+            }
+            
+            &:hover {
+                background-color: $orange;
+                color: $white;
+            }  
+            
+        }
+        tr:first-child {
+            background-color: $orange;
+            color: $white;
+            font-style: italic;
+        }
+    }
+}

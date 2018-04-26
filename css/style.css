@@ -115,7 +115,6 @@ table {
   max-width: 1600px;
   width: 100%;
   min-height: 120px;
-  background-color: rgba(238, 238, 238, 0.9);
   z-index: 99;
   transition: all .5s linear; }
   .header .menu {
@@ -331,8 +330,37 @@ table {
 /*---------------*/
 /***** Lily *****/
 /*---------------*/
-body {
-  height: 7000px; }
+.furniture-stiduo {
+  font-family: Lora, serif;
+  background-color: #eee;
+  padding-bottom: 80px; }
+  .furniture-stiduo .table-services, .furniture-stiduo tr, .furniture-stiduo th {
+    border: 1px solid black; }
+  .furniture-stiduo .table-services {
+    border-collapse: collapse;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff; }
+    .furniture-stiduo .table-services caption {
+      font-size: 25px;
+      font-style: italic;
+      margin-bottom: 40px;
+      margin-top: 30px; }
+    .furniture-stiduo .table-services tr, .furniture-stiduo .table-services th {
+      padding: 10px;
+      font-size: 16px; }
+    .furniture-stiduo .table-services tr th:first-child {
+      width: 70%; }
+    .furniture-stiduo .table-services tr:not(:first-child) th:first-child {
+      text-align: left; }
+    .furniture-stiduo .table-services tr:not(:first-child):hover {
+      background-color: #ea5e21;
+      color: #fff; }
+    .furniture-stiduo .table-services tr:first-child {
+      background-color: #ea5e21;
+      color: #fff;
+      font-style: italic; }
 
 .section-title {
   font-family: Open Sans, sans-serif;
@@ -340,12 +368,26 @@ body {
   text-align: center;
   line-height: 60px;
   margin-top: 80px;
-  margin-bottom: 80px; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  font-weight: 600;
+  font-style: italic;
+  box-shadow: 0 5px 0 5px #ea5e21, 0 15px 0 5px #42454e; }
   .section-title img {
     max-width: 200px;
     vertical-align: middle;
     padding: 10px;
     border-radius: 2px; }
+
+.title-furniture {
+  background-color: #ea5e21;
+  color: #fff;
+  font-size: 45px;
+  letter-spacing: 5px;
+  line-height: 80px;
+  font-style: italic;
+  box-shadow: none; }
 
 .section-descr {
   max-width: 1000px;
@@ -528,6 +570,49 @@ body {
   cursor: pointer;
   display: none;
   z-index: 99999; }
+
+/*Footer*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(/img/bg-title.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-color: #eee;
+  font-family: Lora, serif;
+  padding-bottom: 60px;
+  padding-top: 30px;
+  border-top: 2px dashed #000; }
+  .footer-logo img {
+    max-width: 180px; }
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    width: 100%; }
+    .footer-menu ul {
+      border-left: 2px solid #ea5e21; }
+      .footer-menu ul li {
+        padding-left: 20px; }
+        .footer-menu ul li a {
+          display: block;
+          text-decoration: none;
+          padding: 3px;
+          color: #ea5e21;
+          transition: .3s linear;
+          border-radius: 2px; }
+          .footer-menu ul li a:hover {
+            text-decoration: underline;
+            padding-left: 10px; }
+  .footer-contacts ul li {
+    padding: 5px;
+    font-size: 18px; }
+    .footer-contacts ul li span {
+      color: #ea5e21;
+      font-size: 22px;
+      padding-right: 20px; }
 
 @media screen and (max-width: 610px) {
   .jssor_2 {

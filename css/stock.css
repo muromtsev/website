@@ -43,7 +43,6 @@ table {
   max-width: 1600px;
   width: 100%;
   min-height: 120px;
-  background-color: rgba(238, 238, 238, 0.9);
   z-index: 99;
   transition: all .5s linear; }
   .header .menu {

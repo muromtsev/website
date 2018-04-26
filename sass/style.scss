@@ -4,21 +4,25 @@
 @import '_header';
 @import '_cards';
 @import '_mb';
+@import '_table';
 
 
-body {
-    height: 7000px; /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-}
-
-
-// services
+//titles
 .section-title {
     font-family: $font-OpenSans;
     font-size: 40px;
     text-align: center;
     line-height: 60px;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;    
+    font-weight: 600;
+    font-style: italic;
+    box-shadow: 0 5px 0 5px $orange,
+                0 15px 0 5px #42454e;
+    
+    
     
     img {
         max-width: 200px;
@@ -28,6 +32,17 @@ body {
         border-radius: 2px;
     }
 }
+.title-furniture {
+    background-color: $orange;
+    color: $white;
+    font-size: 45px;
+    letter-spacing: 5px;
+    line-height: 80px;
+    font-style: italic;
+    box-shadow: none;
+}
+
+
 .section-descr {
     max-width: 1000px;
     min-height: 120px;
@@ -38,6 +53,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+// services
 .services {
     display: flex;
     position: relative;
@@ -281,7 +297,71 @@ body {
 
 //btn_top_jQuery
 
+/*Footer*/
 
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/img/bg-title.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: #eee;
+    font-family: $font-Lora;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    border-top: 2px dashed $black;
+    
+    &-logo img {
+        max-width: 180px;
+    }
+    &-menu {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        width: 100%;
+        
+        ul {
+            
+            border-left: 2px solid $orange;
+            li {
+                padding-left: 20px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 3px;
+                    color: $orange;
+                    transition: .3s linear;
+                    border-radius: 2px;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }//ul
+    }//menu
+    
+    &-contacts {
+        
+        ul {
+            
+            li {
+                padding: 5px;
+                font-size: 18px;
+                
+                span {
+                    color: $orange;
+                    font-size: 22px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    
+}
 
 
 

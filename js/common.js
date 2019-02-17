@@ -1,15 +1,15 @@
-document.body.onload = function () {
+// document.body.onload = function () {
 
-    setTimeout(function () {
-        var preloader = document.getElementById('preloader');
-        if (!preloader.classList.contains('done')) {
-            preloader.classList.add('done');
-        }
+//     setTimeout(function () {
+//         var preloader = document.getElementById('preloader');
+//         if (!preloader.classList.contains('done')) {
+//             preloader.classList.add('done');
+//         }
 
-    }, 2000);
+//     }, 2000);
 
 
-} 
+// } 
 
 jQuery(document).ready(function() {
     //header
